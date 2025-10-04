@@ -1,0 +1,109 @@
+[gd_scene load_steps=10 format=3 uid="uid://bpe72drkc08tf"]
+
+[ext_resource type="Script" uid="uid://b7thk7taiaydu" path="res://characters/scripts/player_control.gd" id="1_3eadt"]
+[ext_resource type="Texture2D" uid="uid://cnwyh1l12wr47" path="res://coinco mc standing.png" id="1_dnjla"]
+[ext_resource type="Script" uid="uid://c4koruuhnsugw" path="res://characters/scripts/player_animation.gd" id="2_x0jl3"]
+[ext_resource type="Texture2D" uid="uid://bdg3t4vnx4qoc" path="res://coinco  mc walking.png" id="3_tory2"]
+
+[sub_resource type="Animation" id="Animation_3eadt"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerAnimation/CoincoMcStanding:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Rect2(104, 8.5, 97, 167), Rect2(8, 8.5, 97, 167)]
+}
+
+[sub_resource type="Animation" id="Animation_tory2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerAnimation/CoincoMcStanding:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(104, 8.5, 97, 167)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlayerAnimation/CoincoMcWalking:region_rect")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 97, 200)]
+}
+
+[sub_resource type="Animation" id="Animation_x0jl3"]
+resource_name = "movement"
+length = 0.75
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerAnimation/CoincoMcWalking:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Rect2(0, 0, 97, 200), Rect2(115, 0, 97, 200), Rect2(240, 0, 97, 200), Rect2(345, 0, 97, 200)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_x0jl3"]
+_data = {
+&"RESET": SubResource("Animation_tory2"),
+&"idle": SubResource("Animation_3eadt"),
+&"movement": SubResource("Animation_x0jl3")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3eadt"]
+size = Vector2(63, 152)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_3eadt")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(0, -100)
+
+[node name="PlayerAnimation" type="Node2D" parent="."]
+script = ExtResource("2_x0jl3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PlayerAnimation"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_x0jl3")
+}
+autoplay = "idle"
+
+[node name="CoincoMcStanding" type="Sprite2D" parent="PlayerAnimation"]
+texture = ExtResource("1_dnjla")
+region_enabled = true
+region_rect = Rect2(104, 8.5, 97, 167)
+
+[node name="CoincoMcWalking" type="Sprite2D" parent="PlayerAnimation"]
+visible = false
+position = Vector2(-3, 5)
+texture = ExtResource("3_tory2")
+region_enabled = true
+region_rect = Rect2(0, 0, 97, 200)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-2.5, -3)
+shape = SubResource("RectangleShape2D_3eadt")
