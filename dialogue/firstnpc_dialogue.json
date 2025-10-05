@@ -1,0 +1,19 @@
+[
+	{"name": "Person", "text": "Hello there sir!"},
+	{"name": "You", "text": "Um... Hi."},
+	{"name": "Person", "text": "I'm Autumn and I'm the mayors assistant! Nice to meet you!"},
+	{"name": "You", "text": "Nice to meet you too, I guess."},
+	{"name": "Autumn", "text": "Haha, You know, I'm right on my way to get mayors morning coffee"},
+	{"name": "Autumn", "text": "but the weather is just too perfect!"},
+	{"name": "Autumn", "text": "That's why I've been standing here for the past hour now."},
+	{"name": "You", "text": "So you're slacking off?"},
+	{"name": "Autumn", "text": "HUUH? Nooo, I wouldn't call it that!"},
+	{"name": "Autumn", "text": "Anyways,enough about me! Why are you here?"},
+	{"name": "Autumn", "text": "Are you perhaps visiting friends? Or are you on vacation?"},
+	{"name": "You", "text": "Neither, I live here."},
+	{"name": "Autumn", "text": "...oh"},
+	{"name": "Autumn", "text": "Really?"},
+	{"name": "You", "text": "Yup."},
+	{"name": "Autumn", "text": ""}
+	
+]

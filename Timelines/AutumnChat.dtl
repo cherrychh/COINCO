@@ -1,0 +1,43 @@
+join Autumn leftmost
+Person: Hello there sir!
+You: Um...Hi.
+Person: My name is Autumn and I'm the mayors assistant!\
+Nice to meet you!
+You: Nice to meet you too, I guess.
+Autumn: Haha \:) You know, I was on my way to get mayor's morning coffee...
+Autumn: But the weather is just too perfect!\
+That's why I've been standing here for the past hour now.
+- So you're slacking off?
+	Autumn: WHat?? Noo... I wouldn't call it that!
+	Autumn: I'm just... Uhhh... Making the most out of my amazing job!
+- Wow, that's interesting.
+	Autumn: Yeah, you get me!\
+	Cloverbay does have the best weather!
+Autumn: Anyways, enough about me. Why are you here?\
+Perhaps visiting some friends? Or are you on vacation?
+Autumn: If you need a tour guide I'd be happy to help!\
+Not to brag, but I do know everything and everyone here, hehe.
+You: I'm not on vacation. I live here.
+Autumn: Oh! Really?
+You: Yes, I've been living here for the past decade now.
+Autumn: That's weird. Howcome I've never seen you around?\
+I've spent my entire life here, but I don't remember ever seeing you though.
+- I don't have a reason to wonder around this town.
+	Autumn: What? But that's so sad though!
+	You: It really isn't th-
+	Autumn: Don't worry! From now on I'll come visit you every week and I can introduce you to the other town folks!
+	- That would be nice.
+		Autumn: Yay!
+	- Absolutely not.
+		Autumn: Haha, you kind of like a older version of the mayor!\
+		He's also very grumpy all the time, but on the inside he's actually very sweet!
+		You: I-
+		Autumn: That's actually why I decided to apply for the position of the mayors assistant.
+		At first I thought that he wasn't a fitting mayor because of his... unique personality. But after getting to know him better, I realized that he's probably the most passionate about this town's well being!\
+		Now I've come to realize that there's no other person that's more fitting for the mayor's role!
+		Autumn: That's why I want to make sure that everyone else sees his true self!
+		- You seem to like him a lot, huh.
+			Huh? Uhh... I mean...\
+			Of course I like him, haha! He's my boss after all.
+		- And what does any of this have to do with me?
+- Maybe you

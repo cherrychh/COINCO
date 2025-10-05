@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://cmy2m7cdw3bjx"]
+
+[ext_resource type="Script" uid="uid://bu5hkyy047koo" path="res://scenes/firstnpc.gd" id="1_6ep30"]
+[ext_resource type="Texture2D" uid="uid://w7jw76yaanpn" path="res://characters/coinco first person.png" id="1_8durm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ep30"]
+atlas = ExtResource("1_8durm")
+region = Rect2(20, 0, 110, 177)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ky4jy"]
+atlas = ExtResource("1_8durm")
+region = Rect2(140, 0, 110, 177)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_epydk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ep30")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ky4jy")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ep30"]
+size = Vector2(176, 153)
+
+[node name="firstnpc" type="CharacterBody2D"]
+script = ExtResource("1_6ep30")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_epydk")
+animation = &"idle"
+frame_progress = 0.910438
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="ChatDetection" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ChatDetection"]
+position = Vector2(-43, -4.5)
+shape = SubResource("RectangleShape2D_6ep30")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="ChatDetection" to="." method="_on_chat_detection_body_entered"]
+[connection signal="body_exited" from="ChatDetection" to="." method="_on_chat_detection_body_exited"]

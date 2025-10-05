@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://vu4ffs4oilxo"]
+
+[ext_resource type="Texture2D" uid="uid://o1o0wp0hwmxk" path="res://dialogue box.png" id="1_v5vy6"]
+
+[node name="FirstDialogue" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = -502.0
+offset_top = -650.0
+offset_right = 1670.0
+offset_bottom = 362.0
+texture = ExtResource("1_v5vy6")
+
+[node name="text" type="RichTextLabel" parent="NinePatchRect"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 85.0
+offset_top = 359.0
+offset_right = 360.0
+offset_bottom = 402.0
+scale = Vector2(3, 3)
+text = "CHATTING!!"
+
+[node name="name" type="RichTextLabel" parent="NinePatchRect"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.037
+anchor_top = 0.302
+anchor_right = 0.037
+anchor_bottom = 0.302
+offset_left = 6.636
+offset_top = -5.62402
+offset_right = 204.636
+offset_bottom = 34.376
+scale = Vector2(3, 3)
+text = "Name:"
