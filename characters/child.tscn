@@ -36,7 +36,7 @@ position = Vector2(-0.625, 10.5109)
 scale = Vector2(0.264563, 0.264563)
 sprite_frames = SubResource("SpriteFrames_24h78")
 animation = &"idle"
-frame_progress = 0.441352
+frame_progress = 0.0453569
 
 [node name="Timer" type="Timer" parent="."]
 

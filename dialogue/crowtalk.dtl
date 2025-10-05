@@ -1,0 +1,22 @@
+As you walk by, you spot a crow digging through someones trash.
+join croweat center
+You: Hey, you really shouldn't be eating that.\
+It's not good for your health.
+leave croweat
+join crow center
+The crow looks at you curiously.
+You: Here, you can have these grapes.
+leave crow
+join coincoGrape center
+You throw away the garbage and watch as the crow eats the grapes happily.
+leave coincoGrape
+join crowbush center
+Suddenly the crow jumps into a nearby bush.
+leave crowbush
+join crowlay center
+It returns and leaves a shiny object on the ground.
+leave crowlay
+join crowcoin center
+You pick up the object and look at it.\
+It's a coin!
+You: Thanks buddy.

@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://bdpbpwr3bjxrr"]
+
+[ext_resource type="Script" uid="uid://ch0nc5yg3sd5r" path="res://characters/crow.gd" id="1_ngvpu"]
+[ext_resource type="Texture2D" uid="uid://b3fgo724oh10x" path="res://characters/coinco crow.png" id="2_nu66a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xgftr"]
+atlas = ExtResource("2_nu66a")
+region = Rect2(18, 0, 58, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqwxy"]
+atlas = ExtResource("2_nu66a")
+region = Rect2(76, 0, 58, 66)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wmmjq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xgftr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tqwxy")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ngvpu"]
+size = Vector2(119, 47)
+
+[node name="crow" type="CharacterBody2D"]
+script = ExtResource("1_ngvpu")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(7.5, -2.84483)
+scale = Vector2(0.431035, 0.431034)
+sprite_frames = SubResource("SpriteFrames_wmmjq")
+animation = &"idle"
+frame_progress = 0.373234
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, -19)
+shape = SubResource("RectangleShape2D_ngvpu")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

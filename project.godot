@@ -31,11 +31,17 @@ directories/dch_directory={
 "coinClover": "res://dialogue/coinClover.dch",
 "coinKindness": "res://dialogue/coinKindness.dch",
 "coincoGrape": "res://dialogue/coincoGrape.dch",
+"crow": "res://characters/crow.dch",
+"crowbush": "res://characters/crowbush.dch",
+"crowcoin": "res://characters/crowcoin.dch",
+"croweat": "res://dialogue/croweat.dch",
+"crowlay": "res://characters/crowlay.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
 "AutumnChat": "res://Timelines/AutumnChat.dtl",
-"child": "res://dialogue/child.dtl"
+"child": "res://dialogue/child.dtl",
+"crowtalk": "res://dialogue/crowtalk.dtl"
 }
 layout/style_directory={}
 extensions_folder="res://addons/dialogic_additions"

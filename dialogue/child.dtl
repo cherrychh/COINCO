@@ -22,7 +22,6 @@ child: Umm... Can you help me mister?
 You: ... me?
 child: Yeah! You're an adult, so you can help me right?
 - Fine
-	child: Yay! Thank you mister!
 - No
 	child: Please?
 	You: No.
@@ -32,9 +31,8 @@ child: Yeah! You're an adult, so you can help me right?
 	You: No.
 	child: PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE-
 	- Fine.
-		child: Yay! Thanks mister!
 	- FINE!
-		child: Yay! Thanks mister!
+child: Yay! Thanks mister!
 - Climb the tree
 	You: Well, I guess I'm really doing this.
 	You carefully climb the tree and retieve the ball.\
