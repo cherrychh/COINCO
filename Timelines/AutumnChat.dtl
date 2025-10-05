@@ -27,17 +27,62 @@ I've spent my entire life here, but I don't remember ever seeing you though.
 	You: It really isn't th-
 	Autumn: Don't worry! From now on I'll come visit you every week and I can introduce you to the other town folks!
 	- That would be nice.
-		Autumn: Yay!
+		Autumn: Yay! I'll come over and bring some homemade cookies! \
+		I'm sure you'll enjoy them.
+		Autumn: And I already know the perfect person to introduce you to, hehee.\
+		I'm sure you get along with them!
+		set {AutumnComingOver} = true
 	- Absolutely not.
 		Autumn: Haha, you kind of like a older version of the mayor!\
 		He's also very grumpy all the time, but on the inside he's actually very sweet!
 		You: I-
 		Autumn: That's actually why I decided to apply for the position of the mayors assistant.
-		At first I thought that he wasn't a fitting mayor because of his... unique personality. But after getting to know him better, I realized that he's probably the most passionate about this town's well being!\
+		Autumn: At first I thought that he wasn't a fitting mayor because of his... unique personality. But after getting to know him better, I realized that he's probably the most passionate about this town's well being!\
 		Now I've come to realize that there's no other person that's more fitting for the mayor's role!
 		Autumn: That's why I want to make sure that everyone else sees his true self!
 		- You seem to like him a lot, huh.
-			Huh? Uhh... I mean...\
+			Autumn: Huh? Uhh... I mean...\
 			Of course I like him, haha! He's my boss after all.
 		- And what does any of this have to do with me?
-- Maybe you
+			Autumn: Well, from what I've seen, you're very similar to mayor. SO, when people get to know you better,\
+			I'm sure that you'll be super popular as well!
+			You: I don't think that's how it work.
+			Autumn: Come on! Have some faith in yourself.\
+			I'm sure you'll make many new friends, hehe.
+- It's none of your business.
+	Autumn: Whatever you say gramps! But just so you know, it will be my business after we become friends!
+	You: I'm not int-
+Autumn: But anyways, what bring you here today?
+You: Um...
+- [Tell her you're story]
+	Autumn: On my goodness! I didn't know that you were on such an important mission!\
+	Hmm... OH! I think I might have the most perfect coin for you, sir!
+	You watch, as Autumn rummages her bag for something.
+	Autumn: Tadaa!!
+	Autumn: Here you go!\
+	That's our Cloverbay's first official coin!
+	join coinClover center
+	Autumn: Mayor probably doesn't want me to give it away, but I don't think there anyone more deserving of this coin other than you!
+	- Thank you
+		You: Thank you... I'm really greatful that you're willing to give me something this valuable.
+		Autumn: No problem!\
+		I hope you find all the coins you need on this journey!
+	- You shouldn't have
+		You: You truly shouldn't have... I don't think you should give me something this important.
+		Autumn: Please, I insist you take it!\
+		It might bring good luck on your journey, if you know what I mean, hehe.
+		You: Thank you, I appreciate it a lot.
+		Autumn: No problem!
+		if {AutumnComingOver} == true:
+			Autumn: I'll see you later this week then!
+- [Keep it simple]
+	Autumn: Oh, a coin?\
+	Hmmm... I might have one around somewhere.
+	You watch as Autumn rummages her bag for a coin.
+	Autumn: OH! Found it!
+	join coinKindness center
+	Autumn: Here you go! I think this is quite fitting for you!
+	You: Thank you.
+	Autumn: No problem!
+	if {AutumnComingOver} == true:
+		Autumn: I'll see you later this week then!

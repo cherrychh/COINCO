@@ -26,12 +26,14 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ep30"]
-size = Vector2(176, 153)
+size = Vector2(238, 157)
 
 [node name="firstnpc" type="CharacterBody2D"]
 script = ExtResource("1_6ep30")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1.5, -2.41364)
+scale = Vector2(1.02727, 1.02727)
 sprite_frames = SubResource("SpriteFrames_epydk")
 animation = &"idle"
 frame_progress = 0.910438
@@ -39,12 +41,12 @@ frame_progress = 0.910438
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
-[node name="ChatDetection" type="Area2D" parent="."]
+[node name="chatDetection" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ChatDetection"]
-position = Vector2(-43, -4.5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chatDetection"]
+position = Vector2(-12, -6.5)
 shape = SubResource("RectangleShape2D_6ep30")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="body_entered" from="ChatDetection" to="." method="_on_chat_detection_body_entered"]
-[connection signal="body_exited" from="ChatDetection" to="." method="_on_chat_detection_body_exited"]
+[connection signal="body_entered" from="chatDetection" to="." method="_on_chat_detection_body_entered"]
+[connection signal="body_exited" from="chatDetection" to="." method="_on_chat_detection_body_exited"]

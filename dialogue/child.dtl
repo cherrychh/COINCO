@@ -1,0 +1,74 @@
+join child leftmost
+child: Uh! UuH! AGH!
+You: Hey kid, what are you doing?
+child: What? Me? I'm trying to get my ball ball from that tree.
+You: Is it stuck?
+child: Yup.
+You: Have you tried shaking the tree?
+child: I did. But the tree's too heavy.
+You: Then why don't you climb up and get it?
+child: Climb up? I don't want to do that!
+You: Are you scared?
+child: What?! NO! Of course not!\
+It's just that... Uhh... My mom told me not to climb trees!
+- Back in my days
+	You: You know, back in my days we used to climb trees all the time.
+	child: I don't care! I want my ball back.
+- Just leave it
+	You: Well, if you don't want to climb it, then leave it.
+	child: Nooo! It's my favorite ball and I neeeed ittt!
+You: *sigh* Well, how do you suppose you get your ball back then?
+child: Umm... Can you help me mister?
+You: ... me?
+child: Yeah! You're an adult, so you can help me right?
+- Fine
+	child: Yay! Thank you mister!
+- No
+	child: Please?
+	You: No.
+	child: Pretty please?
+	You: No.
+	child: PLEEEASE??
+	You: No.
+	child: PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE-
+	- Fine.
+		child: Yay! Thanks mister!
+	- FINE!
+		child: Yay! Thanks mister!
+- Climb the tree
+	You: Well, I guess I'm really doing this.
+	You carefully climb the tree and retieve the ball.\
+	When you drop down, you accidentally hurt your back.
+	You: Argh, my back!
+	child: That was very impressive mister!
+	join ball center
+	You: Thanks.\
+	Here have your ball.
+	You hand the ball to the child.
+	leave ball
+- Throw a shoe
+	You take your shoe off and throw it at the ball.\
+	Surprisingly you manage to hit it on your first try!
+	You: Well, that was surprisingly easy.
+	join ball center
+	You hand the ball to the child.
+	leave ball
+child: Thanks a lot, mister!
+You: No problem.
+child: So... What are you doing here mister?
+You: Oh, I'm here to collect some coins.
+child: Do you need more money?
+You: No, I don't. It's just a hobby of mine.
+child: Oh okay! Well I think I have a coin somewhere...
+You: Oh, you don't need to g-
+child: TADAA!
+join chocolate center
+You see the child happily holding up a chocolate coin twoards you.
+child: HERE you can have it!\
+My mom said I shouldn't eat that much chocolate anyways.
+You: Well, thank you then.
+child: AND have these as well, because the coin isn't actually real.
+leave chocolate
+join coincoGrape center
+You: Shouldn't yo-
+child: Good luck finding oher coins mister!

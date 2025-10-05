@@ -13,7 +13,7 @@ func _process(delta):
 	if player_in_chatting_zone:
 		if Input.is_action_just_pressed("chat"):
 			print("Chatting!!!")
-			run_dialogue("AutumnChat")
+			run_dialogue("child")
 		is_chatting = true
 	if current_state == 0:
 		$AnimatedSprite2D.play("idle")
@@ -31,12 +31,11 @@ func _on_timer_timeout() -> void:
 	$Timer.wait_time = choose([1,2])
 	current_state = IDLE
 
-func _on_chat_detection_body_entered(body: Node2D) -> void:
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.has_method("player"):
 		player_in_chatting_zone = true
 
-
-func _on_chat_detection_body_exited(body: Node2D) -> void:
+func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body.has_method("player"):
 		player_in_chatting_zone = false
-		

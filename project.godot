@@ -25,10 +25,17 @@ directories/dch_directory={
 "Autumn": "res://dialogue/Autumn.dch",
 "Person": "res://dialogue/Person.dch",
 "You": "res://dialogue/You.dch",
+"ball": "res://dialogue/ball.dch",
+"child": "res://dialogue/child.dch",
+"chocolate": "res://characters/chocolate.dch",
+"coinClover": "res://dialogue/coinClover.dch",
+"coinKindness": "res://dialogue/coinKindness.dch",
+"coincoGrape": "res://dialogue/coincoGrape.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
-"AutumnChat": "res://Timelines/AutumnChat.dtl"
+"AutumnChat": "res://Timelines/AutumnChat.dtl",
+"child": "res://dialogue/child.dtl"
 }
 layout/style_directory={}
 extensions_folder="res://addons/dialogic_additions"
@@ -64,6 +71,12 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+variables={
+"AutumnComingOver": false
+}
+layout/style_list=[]
+layout/default_style="Default"
+glossary/default_case_sensitive=true
 
 [editor_plugins]
 
